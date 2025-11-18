@@ -5,7 +5,7 @@
   line-height: 1.5;
   letter-spacing: 0.02em;
   font-weight: 700;
-  color: #FF8800;
+  color: #ff8800;
   text-align: center;
   @include mq(sm) {
     font-size: myrem(32);
@@ -17,7 +17,7 @@
   display: block;
   width: myrem(30);
   height: myrem(5);
-  background: linear-gradient(to right, #F4B518, #F4DA18);
+  background: linear-gradient(to right, #f4b518, #f4da18);
   margin-top: myrem(8);
   margin-inline: auto;
 }

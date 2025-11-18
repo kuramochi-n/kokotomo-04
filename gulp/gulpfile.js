@@ -9,7 +9,7 @@ const srcPath = {
     `${srcBase}/js/**/*.js`,
     `!${srcBase}/js/swiper-bundle.min.js`,
     `!${srcBase}/js/**/swiper-bundle.min.min.js`,
-  ], // jsのminファイルを除外 
+  ], // jsのminファイルを除外
   jsUnminified: `${srcBase}/js/swiper-bundle.min.js`,
 };
 const distPath = {
