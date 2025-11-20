@@ -1,0 +1,8 @@
+@use "global" as *;
+
+.l-representative-video {
+  padding-block: myrem(23) myrem(197);
+  @include mq(sm) {
+    padding-block: myrem(38) myrem(230);
+  }
+}

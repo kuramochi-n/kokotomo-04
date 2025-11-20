@@ -1,0 +1,144 @@
+@use "global" as *;
+
+.p-representative-timeline {
+  @include mq(sm) {
+    min-width: myrem(1100);
+    // margin-inline: myrem(375) myrem(350);
+  }
+}
+
+.p-representative-timeline__content {
+  @include mq(sm) {
+    max-width: myrem(660);
+    margin-left: myrem(230);
+  }
+}
+
+.p-representative-timeline__title {
+  font-size: myrem(20);
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  font-weight: 700;
+  color: #ff8800;
+  position: relative;
+  @include mq(sm) {
+  }
+}
+
+.p-representative-timeline__title::before,
+.p-representative-timeline__title::after {
+  content: "";
+  height: myrem(2);
+  border-radius: myrem(999);
+  position: absolute;
+  bottom: myrem(-16);
+  @include mq(sm) {
+  }
+}
+
+.p-representative-timeline__title::before {
+  width: myrem(80);
+  background-color: #ff8800;
+  left: 0;
+  @include mq(sm) {
+    width: myrem(160);
+  }
+}
+
+.p-representative-timeline__title::after {
+  width: 90%;
+  background-color: #d9d9d9;
+  right: 0;
+  z-index: -1;
+  @include mq(sm) {
+    right: myrem(18);
+  }
+}
+
+.p-representative-timeline__list {
+  margin-top: myrem(31);
+  @include mq(sm) {
+  }
+}
+
+.p-representative-timeline__item {
+  display: flex;
+  position: relative;
+  @include mq(sm) {
+    align-items: center;
+  }
+}
+
+.p-representative-timeline__item + .p-representative-timeline__item {
+  margin-top: myrem(24);
+}
+
+.p-representative-timeline__item::before {
+  content: "";
+  width: myrem(10);
+  height: myrem(10);
+  background: #ffd979;
+  border-radius: 50%;
+  position: absolute;
+  top: myrem(8);
+  left: 0;
+  @include mq(sm) {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+.p-representative-timeline__item::after {
+  content: "";
+  width: myrem(1);
+  background-color: #ffd979;
+  position: absolute;
+  top: myrem(10);
+  left: myrem(4.5);
+  bottom: myrem(-40);
+  z-index: -1;
+  @include mq(sm) {
+  }
+}
+
+.p-representative-timeline__item:last-child:after {
+  content: none;
+}
+
+.p-representative-timeline-item__year {
+  font-size: myrem(16);
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  font-weight: 700;
+  padding-left: myrem(19);
+  width: calc(80 / 335 * 100%);
+  @include mq(sm) {
+    width: 80px;
+  }
+}
+
+.p-representative-timeline-item__text {
+  font-size: myrem(16);
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  font-weight: 500;
+  width: calc(255 / 335 * 100%);
+  margin-left: myrem(22);
+  @include mq(sm) {
+    width: auto;
+    margin-left: myrem(19);
+  }
+}
+
+.p-representative-timeline-item__text-space {
+  @include mq(sm) {
+    margin-left: myrem(8);
+  }
+}
+
+.p-representative-timeline-item__text-note {
+  font-size: myrem(12);
+  display: block;
+  @include mq(sm) {
+  }
+}

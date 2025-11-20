@@ -1,5 +1,9 @@
 @use "global" as *;
 
+body {
+  background-color: #fffcf2;
+}
+
 .p-representative-mv {
   position: relative;
   @include mq(sm) {
@@ -30,6 +34,7 @@
 }
 
 .p-representative-mv__wrapper {
+  overflow: hidden;
   @include mq(sm) {
     margin-right: myrem(34);
   }

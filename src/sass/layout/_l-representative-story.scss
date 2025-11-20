@@ -1,0 +1,8 @@
+@use "global" as *;
+
+.l-representative-story {
+  padding-block: myrem(33) myrem(130);
+  @include mq(sm) {
+    padding-block: myrem(55) myrem(130);
+  }
+}

@@ -1,0 +1,8 @@
+@use "global" as *;
+
+.l-representative-timeline {
+  padding-block: myrem(64);
+  @include mq(sm) {
+    padding-block: myrem(79);
+  }
+}
