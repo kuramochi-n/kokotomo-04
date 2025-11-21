@@ -3,7 +3,6 @@
 .p-representative-timeline {
   @include mq(sm) {
     min-width: myrem(1100);
-    // margin-inline: myrem(375) myrem(350);
   }
 }
 
@@ -101,8 +100,18 @@
   }
 }
 
-.p-representative-timeline__item:last-child:after {
-  content: none;
+.p-representative-timeline__item:first-child::after {
+  @include mq(sm) {
+    top: 50%;
+  }
+}
+
+.p-representative-timeline__item:last-child::after {
+  display: none;
+  @include mq(sm) {
+    display: block;
+    bottom: 50%;
+  }
 }
 
 .p-representative-timeline-item__year {
@@ -111,9 +120,8 @@
   letter-spacing: 0.02em;
   font-weight: 700;
   padding-left: myrem(19);
-  width: calc(80 / 335 * 100%);
+  width: myrem(98);
   @include mq(sm) {
-    width: 80px;
   }
 }
 
@@ -122,11 +130,9 @@
   line-height: 1.5;
   letter-spacing: 0.02em;
   font-weight: 500;
-  width: calc(255 / 335 * 100%);
-  margin-left: myrem(22);
+  width: myrem(237);
   @include mq(sm) {
-    width: auto;
-    margin-left: myrem(19);
+    width: myrem(562);
   }
 }
 

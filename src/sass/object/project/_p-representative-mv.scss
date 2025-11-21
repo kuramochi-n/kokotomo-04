@@ -19,7 +19,7 @@ body {
   aspect-ratio: 750 / 1423;
   width: 100%;
   position: absolute;
-  top: myrem(-210);
+  top: myrem(-120);
   left: 0;
   z-index: -1;
   @include mq(sm) {

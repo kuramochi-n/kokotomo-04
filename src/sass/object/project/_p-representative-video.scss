@@ -12,6 +12,7 @@
     display: flex;
     justify-content: center;
     gap: myrem(46);
+    flex-wrap: wrap;
     margin-top: myrem(58);
   }
 }
@@ -47,7 +48,7 @@
 }
 
 .p-representative-video-item__image img {
-  object-fit: 335 / 188;
+  aspect-ratio: 335 / 188;
   width: 100%;
   height: 100%;
   object-fit: cover;
